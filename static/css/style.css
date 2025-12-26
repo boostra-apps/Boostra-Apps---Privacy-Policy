@@ -1314,3 +1314,21 @@ main {
 .why-section-alt {
   padding: 50px 20px;
 }
+
+/* Fix Privacy Policy button centering */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Position FREE badge above logo */
+.showcase-image {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.app-preview-header {
+  flex-direction: column-reverse;
+}
