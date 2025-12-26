@@ -750,3 +750,125 @@ body {
     text-align: center;
   }
 }
+
+/* Homepage Premium Styles */
+.features-grid-home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-icon-large {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.feature-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Value Prop Section */
+.value-prop {
+  padding: 80px 20px;
+  background: var(--white);
+  text-align: center;
+}
+
+.value-prop h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--text-dark);
+}
+
+.value-prop-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.value-prop-text strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+/* CTA Section Home */
+.cta-section-home {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 80px 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+.cta-section-home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cta-section-home p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.btn-large {
+  font-size: 1.125rem;
+  padding: 18px 40px;
+}
+
+/* Responsive for Homepage */
+@media (max-width: 992px) {
+  .features-grid-home {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .value-prop-text {
+    font-size: 1.125rem;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+  }
+
+  .cta-section-home h2 {
+    font-size: 2rem;
+  }
+}
