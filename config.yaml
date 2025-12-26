@@ -1,4 +1,13 @@
-baseURL: "http://hugo-quickstart-template.netlify.com"
+baseURL: "https://your-site-name.netlify.app"
 languageCode: "en-us"
-title: "Netlify + Hugo Quickstart"
+title: "Boostra Apps - Complete, Affordable Shopify Apps"
 theme: "netlify-basic"
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Our Apps"
+      url: "/apps/"
+      weight: 2
