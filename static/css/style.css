@@ -889,3 +889,62 @@ body {
 .features-grid-home .feature-card p {
   max-width: 100%;
 }
+
+/* Improved Header */
+.site-header {
+  background: var(--white);
+  border-bottom: 2px solid var(--primary-color);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(2, 145, 247, 0.1);
+}
+
+.site-logo {
+  transition: transform 0.3s;
+}
+
+.site-logo:hover {
+  transform: scale(1.05);
+}
+
+.site-nav a {
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+}
+
+.site-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s;
+}
+
+.site-nav a:hover::after {
+  width: 100%;
+}
+
+/* Fix apps listing buttons */
+.app-preview-actions .btn-secondary {
+  background: var(--primary-color);
+  color: var(--white);
+  border: 2px solid var(--primary-color);
+}
+
+.app-preview-actions .btn-secondary:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Center app hero logo */
+.app-hero-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
