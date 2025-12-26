@@ -1325,10 +1325,14 @@ main {
 /* Position FREE badge above logo */
 .showcase-image {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
 .app-preview-header {
-  flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
