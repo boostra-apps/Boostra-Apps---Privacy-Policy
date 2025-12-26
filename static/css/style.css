@@ -1194,3 +1194,73 @@ main {
     padding: 30px 20px;
   }
 }
+
+/* Black FREE badge */
+.free-badge-black {
+  display: inline-block;
+  background: var(--text-dark);
+  color: var(--white);
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+}
+
+/* Fix Learn More button */
+.app-preview-actions .btn-primary {
+  border: 2px solid transparent;
+}
+
+.app-preview-actions .btn-primary:hover {
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+/* Center app preview cards */
+.app-preview-card {
+  text-align: center;
+}
+
+.app-preview-header {
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.app-preview-card h3 {
+  text-align: center;
+}
+
+/* Why item large for 2-column grid */
+.why-item-large {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(10px);
+  transition: background 0.3s;
+  text-align: left;
+}
+
+.why-item-large:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.why-item-large h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.why-item-large p {
+  opacity: 0.9;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-item-large {
+    text-align: center;
+  }
+}
