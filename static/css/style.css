@@ -948,3 +948,249 @@ body {
   margin-right: auto;
   display: block;
 }
+
+/* Reduce homepage padding */
+.features {
+  padding: 60px 20px 40px;
+}
+
+.value-prop {
+  padding: 40px 20px 60px;
+}
+
+/* Sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.site-footer {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+/* Center coming soon card vertically */
+.coming-soon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* App Showcase Section */
+.app-showcase {
+  padding: 60px 20px;
+  background: var(--bg-light);
+}
+
+.showcase-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  align-items: center;
+  background: var(--white);
+  padding: 50px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.showcase-image {
+  text-align: center;
+  position: relative;
+}
+
+.showcase-image img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: var(--border-radius);
+}
+
+.showcase-image .free-badge {
+  display: block;
+  margin-top: 20px;
+}
+
+.showcase-content h3 {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.showcase-content p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-size: 1.125rem;
+}
+
+.showcase-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.showcase-features li {
+  padding: 10px 0;
+  padding-left: 30px;
+  position: relative;
+  color: var(--text-light);
+}
+
+.showcase-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Trust Section */
+.trust-section {
+  padding: 60px 20px;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.trust-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--bg-light);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s;
+}
+
+.trust-item:hover {
+  transform: translateY(-5px);
+}
+
+.trust-icon {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.trust-item h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.trust-item p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-section {
+  padding: 80px 20px;
+  background: var(--bg-light);
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 50px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.contact-container .subtitle {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 40px;
+  font-size: 1.125rem;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .showcase-card {
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    padding: 30px 20px;
+  }
+}

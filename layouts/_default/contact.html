@@ -1,0 +1,44 @@
+{{ define "main" }}
+<section class="contact-section">
+  <div class="contact-container">
+    <h1>Get in Touch</h1>
+    <p class="subtitle">Have a question or need support? We're here to help!</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+
+      <!-- Honeypot for spam protection -->
+      <p style="display: none;">
+        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <div style="text-align: center; margin-top: 40px; color: var(--text-light);">
+      <p>Or email us directly at:</p>
+      <p><a href="mailto:support@boostra-apps.com" style="color: var(--primary-color); font-weight: 600; text-decoration: none;">support@boostra-apps.com</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}
