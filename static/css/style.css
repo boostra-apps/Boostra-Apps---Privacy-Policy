@@ -1264,3 +1264,53 @@ main {
     text-align: center;
   }
 }
+
+/* Blue border for Learn More buttons */
+.btn-with-border {
+  border: 2px solid var(--primary-color) !important;
+}
+
+.btn-with-border:hover {
+  border-color: var(--secondary-color) !important;
+}
+
+/* Fix checkboxes alignment */
+.app-preview-features li {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  gap: 10px;
+}
+
+.app-preview-features li:before {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.showcase-features li {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  gap: 10px;
+}
+
+.showcase-features li:before {
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Center feature blocks content */
+.feature-block {
+  text-align: center;
+}
+
+.feature-block ul {
+  text-align: left;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Reduce why section padding */
+.why-section-alt {
+  padding: 50px 20px;
+}
