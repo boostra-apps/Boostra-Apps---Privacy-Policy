@@ -1,17 +1,69 @@
 {{ define "main" }}
-<svg id="background" width='1728' height='1235' viewBox="0 0 1728 1235" fill='none' xmlns='http://www.w3.org/2000/svg'><g opacity='0.75' filter='url(#filter0_f_39_143)'><circle cy='1000' r='264' fill='url(#paint0_linear_39_143)'/></g><g opacity='0.65' filter='url(#filter1_f_39_143)'><circle cx='1720' cy='264' r='379' fill='url(#paint1_linear_39_143)'/></g><defs><filter id='filter0_f_39_143' x='-485' y='515' width='970' height='970' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='110.5' result='effect1_foregroundBlur_39_143'/></filter><filter id='filter1_f_39_143' x='1120' y='-336' width='1200' height='1200' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='110.5' result='effect1_foregroundBlur_39_143'/></filter><linearGradient id='paint0_linear_39_143' x1='196.5' y1='902' x2='-2.55853e-05' y2='1264' gradientUnits='userSpaceOnUse'><stop stop-color="var(--bttm-left-blur-1)"/><stop offset='1' stop-color="var(--bttm-left-blur-2)"/></linearGradient><linearGradient id='paint1_linear_39_143' x1='1720' y1='-115' x2='1720' y2='643' gradientUnits='userSpaceOnUse'><stop stop-color="var(--top-right-blur-1)"/><stop offset='1' stop-color="var(--top-right-blur-2)" /></linearGradient></defs></svg>
-<div id="content">
-  <div class="header">
-    <div class="logo">
-      <img src="/images/boostra-apps-logo.png" alt="Boostra Apps" style="max-width: 250px; margin-bottom: 20px;">
-    </div>
+<section class="hero">
+  <div class="container">
     <h1>Boostra Apps</h1>
-    <h2>Complete Features. Fair Pricing. Fast Support.</h2>
-    {{ .Content }}
-    <div class="bttns">
-      <a href="/apps/" class="bttn primary">Explore Our Apps</a>
-      <a href="mailto:support@boostra-apps.com" class="bttn secondary">Contact Us</a>
+    <p class="tagline">Complete Features. Fair Pricing. Fast Support.</p>
+    <p class="description">
+      We're fed up with incomplete apps, overpriced subscriptions, and support that takes days to respond.
+      That's why we're building something different.
+    </p>
+    <div class="cta-buttons">
+      <a href="/apps/" class="btn btn-primary">Explore Our Apps</a>
+      <a href="mailto:support@boostra-apps.com" class="btn btn-secondary">Contact Us</a>
     </div>
   </div>
-</div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <h2>What Makes Us Different</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>No Feature Limitations</h3>
+        <ul>
+          <li>Every feature included from day one</li>
+          <li>No artificial restrictions</li>
+          <li>No "enterprise-only" functionality</li>
+          <li>Apps built the way they should be: complete</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <h3>Honest, Fair Pricing</h3>
+        <ul>
+          <li>No surprise fees or hidden costs</li>
+          <li>Starting with 100% free apps</li>
+          <li>Lowest fair price possible</li>
+          <li>No forced pricing tiers</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <h3>Support That Actually Helps</h3>
+        <ul>
+          <li>Fast email responses</li>
+          <li>No 3-day ticket systems</li>
+          <li>Real solutions from the builders</li>
+          <li>We're here to help you succeed</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <h3>Built for Reliability</h3>
+        <ul>
+          <li>Following Shopify best practices</li>
+          <li>Performance-optimized code</li>
+          <li>Privacy-first approach</li>
+          <li>Regular updates & maintenance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section container">
+  <h3>Ready to enhance your Shopify store?</h3>
+  <p style="margin-bottom: 30px; font-size: 1.125rem;">Join merchants who are tired of settling for less.</p>
+  <a href="/apps/" class="btn btn-primary">View Our Apps</a>
+</section>
 {{ end }}
